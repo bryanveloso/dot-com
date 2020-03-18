@@ -761,7 +761,7 @@
   version "0.7.4"
   resolved "https://registry.npmjs.org/@reach/auto-id/-/auto-id-0.7.4.tgz#c20bf6db87ef2f34b1bfb4bf450d675524a368c1"
 
-"@sanity/base@1.149.3", "@sanity/base@^1.149.3":
+"@sanity/base@1.149.3":
   version "1.149.3"
   resolved "https://registry.npmjs.org/@sanity/base/-/base-1.149.3.tgz#5d8c8f75915282388f6d56eecef5188796cecdcc"
   dependencies:
@@ -773,6 +773,38 @@
     "@sanity/observable" "1.149.0"
     "@sanity/preview" "1.149.0"
     "@sanity/schema" "1.149.0"
+    "@sanity/state-router" "1.149.0"
+    "@sanity/structure" "1.149.0"
+    "@sanity/transaction-collator" "1.149.0"
+    "@sanity/util" "1.149.0"
+    "@sanity/uuid" "1.149.0"
+    "@sanity/validation" "1.149.0"
+    history "^4.6.3"
+    lodash "^4.17.15"
+    nano-pubsub "^1.0.2"
+    oneline "^1.0.3"
+    promise-props "^1.0.0"
+    react-fast-compare "^2.0.2"
+    react-icon-base "^2.1.2"
+    react-icons "^2.2.7"
+    react-intl "^2.2.2"
+    react-props-stream "^1.0.0"
+    rxjs "^6.5.3"
+    semver-compare "^1.0.0"
+    shallow-equals "^1.0.0"
+
+"@sanity/base@1.149.4", "@sanity/base@^1.149.3":
+  version "1.149.4"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.149.4.tgz#cd23723be76eb02d13a667a5cce84ea81666021f"
+  dependencies:
+    "@sanity/client" "1.149.2"
+    "@sanity/generate-help-url" "1.149.0"
+    "@sanity/image-url" "0.140.15"
+    "@sanity/initial-value-templates" "1.149.0"
+    "@sanity/mutator" "1.149.0"
+    "@sanity/observable" "1.149.0"
+    "@sanity/preview" "1.149.4"
+    "@sanity/schema" "1.149.4"
     "@sanity/state-router" "1.149.0"
     "@sanity/structure" "1.149.0"
     "@sanity/transaction-collator" "1.149.0"
@@ -1010,11 +1042,11 @@
     "@sanity/generate-help-url" "0.140.0"
     "@sanity/rich-date-input" "0.140.34"
 
-"@sanity/default-layout@^1.149.3":
-  version "1.149.3"
-  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-1.149.3.tgz#80ebbc4e487f281e6037df2b74d1b74a39ac1a60"
+"@sanity/default-layout@^1.149.4":
+  version "1.149.4"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.149.4.tgz#1073b9c1aae1377b117352ee5f5f0e048d3d58fc"
   dependencies:
-    "@sanity/base" "1.149.3"
+    "@sanity/base" "1.149.4"
     "@sanity/generate-help-url" "1.149.0"
     is-hotkey "^0.1.4"
     lodash "^4.17.15"
@@ -1278,6 +1310,17 @@
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
 
+"@sanity/preview@1.149.4":
+  version "1.149.4"
+  resolved "https://registry.yarnpkg.com/@sanity/preview/-/preview-1.149.4.tgz#7321383fa05ec487b512866459f5820ab0081bfa"
+  dependencies:
+    "@sanity/image-url" "0.140.15"
+    lodash "^4.17.15"
+    observable-props "^2.0.0"
+    react-props-stream "^1.0.0"
+    rxjs "^6.5.3"
+    shallow-equals "^1.0.0"
+
 "@sanity/react-hooks@1.149.3":
   version "1.149.3"
   resolved "https://registry.npmjs.org/@sanity/react-hooks/-/react-hooks-1.149.3.tgz#b0867286fa52bb59731db7aafb1d1ea9192bbc3f"
@@ -1324,6 +1367,18 @@
 "@sanity/schema@1.149.0":
   version "1.149.0"
   resolved "https://registry.npmjs.org/@sanity/schema/-/schema-1.149.0.tgz#47723a48bc9eab8f9849367d3c70386447d428f6"
+  dependencies:
+    "@sanity/generate-help-url" "1.149.0"
+    arrify "^1.0.1"
+    humanize-list "^1.0.1"
+    json-reduce "^1.0.0"
+    leven "^2.1.0"
+    lodash "^4.17.15"
+    object-inspect "^1.6.0"
+
+"@sanity/schema@1.149.4":
+  version "1.149.4"
+  resolved "https://registry.yarnpkg.com/@sanity/schema/-/schema-1.149.4.tgz#88b5315d3ecc71db551d5ef56d38e497d77486b4"
   dependencies:
     "@sanity/generate-help-url" "1.149.0"
     arrify "^1.0.1"
