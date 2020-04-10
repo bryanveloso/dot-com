@@ -1152,9 +1152,10 @@
   version "1.149.0"
   resolved "https://registry.npmjs.org/@sanity/generate-help-url/-/generate-help-url-1.149.0.tgz#765c2803ae67da16b8349f71317873b67f04b486"
 
-"@sanity/google-maps-input@^1.149.0":
-  version "1.149.0"
-  resolved "https://registry.npmjs.org/@sanity/google-maps-input/-/google-maps-input-1.149.0.tgz#80afa57d9b4969208177fc86ef5c409d25c42cfd"
+"@sanity/google-maps-input@^1.149.7":
+  version "1.149.7"
+  resolved "https://registry.yarnpkg.com/@sanity/google-maps-input/-/google-maps-input-1.149.7.tgz#0c7e76e855bbc82f11f65f7007b0fbf0c0a25942"
+  integrity sha512-URAeSu5I688ulq5EaKKVcSmQ1NLVR7xdSOjkiXb2vity8lU8g7x/o2afIzLzIq6Qtb3jVkeJQg+viCS6mnXwpw==
 
 "@sanity/image-url@0.140.12":
   version "0.140.12"
