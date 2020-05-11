@@ -912,6 +912,11 @@
   resolved "https://registry.yarnpkg.com/@reach/auto-id/-/auto-id-0.7.4.tgz#c20bf6db87ef2f34b1bfb4bf450d675524a368c1"
   integrity sha512-Om3A3FSyQW2nfkskgNLhItdoCOPCRCsmzlwu26qemu6DwiJLNVUBWlBuXhWgMmys/q3hRx3eRYFrzSLl8uheTA==
 
+"@rexxars/eventsource-polyfill@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@rexxars/eventsource-polyfill/-/eventsource-polyfill-1.0.0.tgz#ab46f2f44da23aedd6f51f13d92a194a5367525b"
+  integrity sha512-YnrybIoM9WFqmeK1D8p/gutqjJnmXCVFWAU3ucka9M7Dzpen3f2Dy4KsC6k1wDHrCtHQuUHHwZovh3i5UPDaZw==
+
 "@sanity/base@1.149.10", "@sanity/base@^1.149.3":
   version "1.149.10"
   resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.149.10.tgz#4b813600b707f4ddc0ea579189d125258d434b49"
@@ -1078,10 +1083,10 @@
     rxjs "^6.5.3"
     string-hash "^1.1.3"
 
-"@sanity/core@^1.149.12":
-  version "1.149.12"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-1.149.12.tgz#36a8f7f88ce10918ae2f73c6f95f4516292c3f1d"
-  integrity sha512-vzdBvP6sV+o3aA3LNQ0jy1hcNbKRiaJTooJPiMlVVj1cTVVRxjgoPCj8/gRo8zrQkpqTQySvm7GVdpMHpOiOvw==
+"@sanity/core@^1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-1.149.13.tgz#b0ca3e4277422fa4727290d2235d0dc3b5c0ae25"
+  integrity sha512-Ugh3V3VbVE/s5/IRsMFR43khTbKmTTLqcFmZl6i7uUEyRouAci25et6+/fT23fiInFk9FFjdniNYNx3XvozHdQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.4"
     "@babel/preset-env" "^7.7.4"
@@ -1089,14 +1094,14 @@
     "@babel/preset-typescript" "^7.7.4"
     "@babel/register" "^7.7.4"
     "@sanity/check" "1.149.7"
-    "@sanity/export" "1.149.11"
+    "@sanity/export" "1.149.13"
     "@sanity/generate-help-url" "1.149.0"
-    "@sanity/import" "1.149.9"
+    "@sanity/import" "1.149.13"
     "@sanity/mutator" "1.149.0"
     "@sanity/plugin-loader" "1.149.7"
     "@sanity/resolver" "1.149.7"
     "@sanity/schema" "1.149.4"
-    "@sanity/server" "1.149.7"
+    "@sanity/server" "1.149.13"
     "@sanity/util" "1.149.7"
     "@sanity/uuid" "1.149.0"
     "@sanity/webpack-integration" "1.149.7"
@@ -1261,10 +1266,18 @@
     eventsource "^1.0.6"
     eventsource-polyfill "^0.9.6"
 
-"@sanity/export@1.149.11":
-  version "1.149.11"
-  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-1.149.11.tgz#f627f82f23cfa12eb4cb5228be89cd8d2de20b4b"
-  integrity sha512-hoMbbnfSpe/sfM8YJ9LgSAGrhfYRw1YRH8S8aIAt1Wf8UbRvYfDsoo9ow/CJfajGFU1nEdtT8sfB19Aqd6L7NQ==
+"@sanity/eventsource@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/eventsource/-/eventsource-1.149.13.tgz#2a4669472bfa4c41715eeb8a06936dac76e3225f"
+  integrity sha512-tnSTpLLnDb9TP+54xl0l2aFA+9eakegS7tnTDRbWqtkNubb8juSPWhy3yGfKyQcdja8F1SUAhVm5/RgNYtspcQ==
+  dependencies:
+    "@rexxars/eventsource-polyfill" "^1.0.0"
+    eventsource "^1.0.6"
+
+"@sanity/export@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-1.149.13.tgz#c00737f4848ef01ee609c452f8e8af2c29d6a365"
+  integrity sha512-UB3qhkXT4iHFhqOGzM1OnCzIBs9JxVegkVGftHFZX/vGYzCJM6rY8r+j2ABm7hu+2Q4RZNkh10f3oVJNDn8iAg==
   dependencies:
     agentkeepalive "^4.1.0"
     archiver "^2.1.1"
@@ -1361,10 +1374,10 @@
     dom-event "1.0.0"
     lodash "^4.17.15"
 
-"@sanity/import@1.149.9":
-  version "1.149.9"
-  resolved "https://registry.yarnpkg.com/@sanity/import/-/import-1.149.9.tgz#01be99080f2babfc57ffac2b2eaec1332af20be4"
-  integrity sha512-Sg4yB6SsxDl2M2zkI60hRlA/sDk7sp6s/2I+xwtcjhg9WSfaip15CvN9ZVRfiGk/zItxlVj1enjP/qVSRco7Fg==
+"@sanity/import@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/import/-/import-1.149.13.tgz#662b90e538353edbe7c9a7e832b843335e4baae6"
+  integrity sha512-2o9/cnOifulLH4s5xT3ub7fCgXPh1qL9av2LRU06R1QotY8x71D12o5sBkHCeY/He1dkCki2aNvlRf8ihGca3w==
   dependencies:
     "@sanity/generate-help-url" "1.149.0"
     "@sanity/mutator" "1.149.0"
@@ -1528,10 +1541,10 @@
     lodash "^4.17.15"
     object-inspect "^1.6.0"
 
-"@sanity/server@1.149.7":
-  version "1.149.7"
-  resolved "https://registry.yarnpkg.com/@sanity/server/-/server-1.149.7.tgz#c6f27f29b0392ee7d1db7b2b35b730217cfd242c"
-  integrity sha512-xn67eMVvg0ndzrtizKGhZj4GUUeE6ssPVZrVIOe1vd6jIxIH3Vl5DIdgMNC/2OXaCUT3VO1vCnUT3EHC6izUbA==
+"@sanity/server@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/server/-/server-1.149.13.tgz#89be74f6a5ef2d43070d4e9e9c29cb7c6900db42"
+  integrity sha512-HkchvG1gYsIzvcMoJL1jkub75+VpW2wz4At8RwvY7tgjWCVa8PLnxT/eqCEWOUuGCiNX8KkuIX1fmuvcrzhxQw==
   dependencies:
     "@babel/core" "^7.7.4"
     "@babel/plugin-proposal-class-properties" "^7.7.4"
@@ -1541,7 +1554,7 @@
     "@babel/register" "^7.7.4"
     "@hot-loader/react-dom" "^16.9.0-4.12.11"
     "@sanity/css-loader" "^0.28.12"
-    "@sanity/eventsource" "1.149.0"
+    "@sanity/eventsource" "1.149.13"
     "@sanity/resolver" "1.149.7"
     "@sanity/webpack-integration" "1.149.7"
     "@sanity/webpack-loader" "1.149.7"
