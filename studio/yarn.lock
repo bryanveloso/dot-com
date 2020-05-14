@@ -813,9 +813,41 @@
   version "1.0.0"
   resolved "https://registry.npmjs.org/@rexxars/eventsource-polyfill/-/eventsource-polyfill-1.0.0.tgz#ab46f2f44da23aedd6f51f13d92a194a5367525b"
 
-"@sanity/base@1.149.13", "@sanity/base@^1.149.13":
+"@sanity/base@1.149.13":
   version "1.149.13"
   resolved "https://registry.npmjs.org/@sanity/base/-/base-1.149.13.tgz#2d36c71e836271739e6c875517353468871019e3"
+  dependencies:
+    "@sanity/client" "1.149.13"
+    "@sanity/generate-help-url" "1.149.0"
+    "@sanity/image-url" "0.140.15"
+    "@sanity/initial-value-templates" "1.149.7"
+    "@sanity/mutator" "1.149.0"
+    "@sanity/observable" "1.149.0"
+    "@sanity/preview" "1.149.4"
+    "@sanity/schema" "1.149.4"
+    "@sanity/state-router" "1.149.0"
+    "@sanity/structure" "1.149.7"
+    "@sanity/transaction-collator" "1.149.7"
+    "@sanity/util" "1.149.7"
+    "@sanity/uuid" "1.149.0"
+    "@sanity/validation" "1.149.13"
+    history "^4.6.3"
+    lodash "^4.17.15"
+    nano-pubsub "^1.0.2"
+    oneline "^1.0.3"
+    promise-props "^1.0.0"
+    react-fast-compare "^2.0.2"
+    react-icon-base "^2.1.2"
+    react-icons "^2.2.7"
+    react-intl "^2.2.2"
+    react-props-stream "^1.0.0"
+    rxjs "^6.5.3"
+    semver-compare "^1.0.0"
+    shallow-equals "^1.0.0"
+
+"@sanity/base@1.149.15", "@sanity/base@^1.149.13":
+  version "1.149.15"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.149.15.tgz#47dc275619b67166a80b6c7448f3a175b37e5c8f"
   dependencies:
     "@sanity/client" "1.149.13"
     "@sanity/generate-help-url" "1.149.0"
@@ -1064,11 +1096,11 @@
     "@sanity/generate-help-url" "0.140.0"
     "@sanity/rich-date-input" "0.140.34"
 
-"@sanity/default-layout@^1.149.13":
-  version "1.149.13"
-  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-1.149.13.tgz#6ac3f07adc1fd6cbeef03789bbe9b94c39f18f2f"
+"@sanity/default-layout@^1.149.15":
+  version "1.149.15"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.149.15.tgz#4238f309ce3287ec45f5bc6a10e296130549c227"
   dependencies:
-    "@sanity/base" "1.149.13"
+    "@sanity/base" "1.149.15"
     "@sanity/generate-help-url" "1.149.0"
     is-hotkey "^0.1.4"
     lodash "^4.17.15"
