@@ -1156,10 +1156,10 @@
     postcss-value-parser "^3.3.0"
     source-list-map "^2.0.0"
 
-"@sanity/dashboard@^1.149.15":
-  version "1.149.15"
-  resolved "https://registry.yarnpkg.com/@sanity/dashboard/-/dashboard-1.149.15.tgz#11e51c9d9354b944df28353f9d7c7e7fb049d935"
-  integrity sha512-fv60SctzajWIsOvklneXKmFOR02dpCdE860LIDoHvLWh2HCzas2EV63tQo9LsVtpaRkMEiDltcVy5Be6Y663uQ==
+"@sanity/dashboard@^1.149.16":
+  version "1.149.16"
+  resolved "https://registry.yarnpkg.com/@sanity/dashboard/-/dashboard-1.149.16.tgz#593c7ed89b59d5b8edef2256c7971c8ac920139d"
+  integrity sha512-d7jS4YlwdOcrkttrMN0eEC9Qrr+iaxM7xFOkPQuvFm6y8ZSqLzte42ajU0chmopkvcuZy0neQZEgFt7VrGVfAQ==
   dependencies:
     lodash "^4.17.15"
     react-icons "^2.2.7"
