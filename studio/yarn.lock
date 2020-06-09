@@ -1650,10 +1650,10 @@
     es6-error "^4.0.2"
     type-of-is "^3.5.1"
 
-"@sanity/vision@^1.149.0":
-  version "1.149.0"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-1.149.0.tgz#a4c79d2a828047bfcf9ad1f6db8a9de614a0d765"
-  integrity sha512-TKaUXL8OmrOWtJrq2grPegQ3OTqpmIeY8CsqZZ2OMQDqrpGsZ3+EzQhYFesuf+sXApz9/877W217I7bP5DOY8w==
+"@sanity/vision@^1.149.16":
+  version "1.149.16"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-1.149.16.tgz#154c1d3094c7ae77bc9e1ca48429e9a182fdc1bb"
+  integrity sha512-W5uXiVwwjxM+XBYI323Iou0lwA19atyBVIs1zoBlOnYLYOYXrSwvbtwaWUgrzxmh00oTD94oOURVXxMkMeuRog==
   dependencies:
     classnames "^2.2.5"
     codemirror "^5.47.0"
