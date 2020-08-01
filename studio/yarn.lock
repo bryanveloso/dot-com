@@ -947,6 +947,18 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
+"@sanity/client@^1.149.13":
+  version "1.149.18"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-1.149.18.tgz#b69da5a9339ced013de961971e737133e1501e8a"
+  dependencies:
+    "@sanity/eventsource" "1.149.16"
+    "@sanity/generate-help-url" "1.149.16"
+    "@sanity/observable" "1.149.16"
+    deep-assign "^2.0.0"
+    get-it "^5.0.3"
+    make-error "^1.3.0"
+    object-assign "^4.1.1"
+
 "@sanity/components@^0.140.9":
   version "0.140.38"
   resolved "https://registry.npmjs.org/@sanity/components/-/components-0.140.38.tgz#0b03d931b17779ab8c069a8661f9b86b3584d108"
@@ -1077,10 +1089,11 @@
     postcss-value-parser "^3.3.0"
     source-list-map "^2.0.0"
 
-"@sanity/dashboard@^1.149.16":
-  version "1.149.16"
-  resolved "https://registry.npmjs.org/@sanity/dashboard/-/dashboard-1.149.16.tgz#593c7ed89b59d5b8edef2256c7971c8ac920139d"
+"@sanity/dashboard@^1.149.19":
+  version "1.149.19"
+  resolved "https://registry.yarnpkg.com/@sanity/dashboard/-/dashboard-1.149.19.tgz#e6c5d068b8d8b7ff6f09544febf32191414fbc53"
   dependencies:
+    "@sanity/image-url" "^0.140.19"
     lodash "^4.17.15"
     react-icons "^2.2.7"
     rxjs "^6.5.3"
@@ -1252,6 +1265,12 @@
 "@sanity/image-url@0.140.15":
   version "0.140.15"
   resolved "https://registry.npmjs.org/@sanity/image-url/-/image-url-0.140.15.tgz#7b8afc49130398e1a6e7bde03b5961d2384f7676"
+
+"@sanity/image-url@^0.140.19":
+  version "0.140.19"
+  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-0.140.19.tgz#6adfea7b7768a1708eba6bdcfe9eb0746d2bb1f9"
+  dependencies:
+    "@sanity/client" "^1.149.13"
 
 "@sanity/imagetool@0.140.30":
   version "0.140.30"
