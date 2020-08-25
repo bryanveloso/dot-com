@@ -892,21 +892,36 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
+"@reach/auto-id@^0.10.5":
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/@reach/auto-id/-/auto-id-0.10.5.tgz#fa78c71ce2f565ebed1ad91a8d9a685176d23c48"
+  dependencies:
+    "@reach/utils" "0.10.5"
+    tslib "^2.0.0"
+
 "@reach/auto-id@^0.7.2":
   version "0.7.4"
   resolved "https://registry.npmjs.org/@reach/auto-id/-/auto-id-0.7.4.tgz#c20bf6db87ef2f34b1bfb4bf450d675524a368c1"
+
+"@reach/utils@0.10.5":
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.10.5.tgz#fbac944d29565f6dd7abd0e1b13950e99b1e470b"
+  dependencies:
+    "@types/warning" "^3.0.0"
+    tslib "^2.0.0"
+    warning "^4.0.3"
 
 "@rexxars/eventsource-polyfill@^1.0.0":
   version "1.0.0"
   resolved "https://registry.npmjs.org/@rexxars/eventsource-polyfill/-/eventsource-polyfill-1.0.0.tgz#ab46f2f44da23aedd6f51f13d92a194a5367525b"
 
-"@sanity/base@1.150.1":
-  version "1.150.1"
-  resolved "https://registry.npmjs.org/@sanity/base/-/base-1.150.1.tgz#8365278405bad379b1365b811c1fcd8756bad65c"
+"@sanity/base@1.150.2":
+  version "1.150.2"
+  resolved "https://registry.npmjs.org/@sanity/base/-/base-1.150.2.tgz#b53c96d8727e05fb10ff9d599230b09cb6198976"
   dependencies:
     "@sanity/bifur-client" "0.0.4"
     "@sanity/client" "1.150.1"
-    "@sanity/components" "1.150.1"
+    "@sanity/components" "1.150.2"
     "@sanity/generate-help-url" "1.150.1"
     "@sanity/image-url" "^0.140.19"
     "@sanity/initial-value-templates" "1.150.1"
@@ -936,20 +951,20 @@
     semver-compare "^1.0.0"
     shallow-equals "^1.0.0"
 
-"@sanity/base@1.150.2", "@sanity/base@^1.150.2":
-  version "1.150.2"
-  resolved "https://registry.npmjs.org/@sanity/base/-/base-1.150.2.tgz#b53c96d8727e05fb10ff9d599230b09cb6198976"
+"@sanity/base@1.150.3", "@sanity/base@^1.150.2":
+  version "1.150.3"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.150.3.tgz#fa368aa02e82fd33d886500b9cbbb067a18f0eac"
   dependencies:
-    "@sanity/bifur-client" "0.0.4"
+    "@sanity/bifur-client" "^0.0.5"
     "@sanity/client" "1.150.1"
-    "@sanity/components" "1.150.2"
+    "@sanity/components" "1.150.3"
     "@sanity/generate-help-url" "1.150.1"
     "@sanity/image-url" "^0.140.19"
     "@sanity/initial-value-templates" "1.150.1"
     "@sanity/mutator" "1.150.1"
     "@sanity/observable" "1.150.1"
     "@sanity/preview" "1.150.1"
-    "@sanity/schema" "1.150.1"
+    "@sanity/schema" "1.150.3"
     "@sanity/state-router" "1.150.1"
     "@sanity/structure" "1.150.1"
     "@sanity/transaction-collator" "1.150.1"
@@ -1004,7 +1019,21 @@
   dependencies:
     nanoid "^3.1.3"
 
-"@sanity/block-tools@1.150.1", "@sanity/block-tools@^1.149.4":
+"@sanity/bifur-client@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@sanity/bifur-client/-/bifur-client-0.0.5.tgz#05926145bd8c3f35f2d7f5beb28e26d915f6bfd9"
+  dependencies:
+    nanoid "^3.1.3"
+    rxjs "^6.4.0"
+
+"@sanity/block-tools@1.150.3":
+  version "1.150.3"
+  resolved "https://registry.yarnpkg.com/@sanity/block-tools/-/block-tools-1.150.3.tgz#df85fd331010748f9691cf301c9075a28e93fae1"
+  dependencies:
+    get-random-values "^1.2.0"
+    lodash "^4.17.15"
+
+"@sanity/block-tools@^1.149.4":
   version "1.150.1"
   resolved "https://registry.npmjs.org/@sanity/block-tools/-/block-tools-1.150.1.tgz#8ffd56bd04c40514e16dc8337cb18a2cf0051c8d"
   dependencies:
@@ -1045,12 +1074,12 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@1.150.1":
-  version "1.150.1"
-  resolved "https://registry.npmjs.org/@sanity/components/-/components-1.150.1.tgz#bd53ab2fe6e8efcf376b3c3e74dfd2afd62e0118"
+"@sanity/components@1.150.2":
+  version "1.150.2"
+  resolved "https://registry.npmjs.org/@sanity/components/-/components-1.150.2.tgz#c869e03328cb199fb3beac9c78980f350db09bb6"
   dependencies:
     "@juggle/resize-observer" "3.1.3"
-    "@sanity/base" "1.150.1"
+    "@sanity/base" "1.150.2"
     "@sanity/util" "1.150.1"
     attr-accept "^1.1.0"
     boundless-arrow-key-navigation "^1.1.0"
@@ -1065,23 +1094,24 @@
     lodash "^4.17.15"
     nano-pubsub "^1.0.2"
     palx "^1.0.3"
-    popper.js "^1.16.1"
+    popper.js "1.16.1"
     react-animate-height "^2.0.6"
     react-click-outside "^3.0.0"
     react-motion "^0.5.2"
-    react-popper "^1.0.2"
+    react-popper "1.3.7"
     react-sortable-hoc "^0.6.3"
     react-split-pane "^0.1.84"
-    react-tippy "^1.2.3"
+    react-tippy "1.4.0"
     rxjs "^6.5.3"
     string-hash "^1.1.3"
 
-"@sanity/components@1.150.2", "@sanity/components@^1.150.2":
-  version "1.150.2"
-  resolved "https://registry.npmjs.org/@sanity/components/-/components-1.150.2.tgz#c869e03328cb199fb3beac9c78980f350db09bb6"
+"@sanity/components@1.150.3", "@sanity/components@^1.150.2":
+  version "1.150.3"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.150.3.tgz#0eb9c47f2ce85f046880a1837db699763916d558"
   dependencies:
     "@juggle/resize-observer" "3.1.3"
-    "@sanity/base" "1.150.2"
+    "@reach/auto-id" "^0.10.5"
+    "@sanity/base" "1.150.3"
     "@sanity/util" "1.150.1"
     attr-accept "^1.1.0"
     boundless-arrow-key-navigation "^1.1.0"
@@ -1253,19 +1283,19 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@^1.150.2":
-  version "1.150.2"
-  resolved "https://registry.npmjs.org/@sanity/desk-tool/-/desk-tool-1.150.2.tgz#6966538843856a8616fa795ff27ec269c5af4a94"
+"@sanity/desk-tool@^1.150.4":
+  version "1.150.4"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.150.4.tgz#98abaa8655480e4071bcbd653a00a644e5ba6137"
   dependencies:
     "@juggle/resize-observer" "3.1.3"
     "@reach/auto-id" "^0.7.2"
-    "@sanity/base" "1.150.2"
-    "@sanity/components" "1.150.2"
+    "@sanity/base" "1.150.3"
+    "@sanity/components" "1.150.3"
     "@sanity/data-aspects" "1.150.1"
-    "@sanity/form-builder" "1.150.2"
+    "@sanity/form-builder" "1.150.3"
     "@sanity/generate-help-url" "1.150.1"
     "@sanity/mutator" "1.150.1"
-    "@sanity/react-hooks" "1.150.1"
+    "@sanity/react-hooks" "1.150.4"
     "@sanity/structure" "1.150.1"
     "@sanity/util" "1.150.1"
     "@sanity/uuid" "1.150.1"
@@ -1325,13 +1355,13 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@1.150.2":
-  version "1.150.2"
-  resolved "https://registry.npmjs.org/@sanity/form-builder/-/form-builder-1.150.2.tgz#83cda6421cf609d057c79511168fe2a88822723e"
+"@sanity/form-builder@1.150.3":
+  version "1.150.3"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-1.150.3.tgz#7522474f2ebb513593e4aa7bdf759afcc3ee3346"
   dependencies:
-    "@sanity/base" "1.150.2"
-    "@sanity/block-tools" "1.150.1"
-    "@sanity/components" "1.150.2"
+    "@sanity/base" "1.150.3"
+    "@sanity/block-tools" "1.150.3"
+    "@sanity/components" "1.150.3"
     "@sanity/generate-help-url" "1.150.1"
     "@sanity/imagetool" "1.150.1"
     "@sanity/mutator" "1.150.1"
@@ -1519,11 +1549,11 @@
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
 
-"@sanity/react-hooks@1.150.1":
-  version "1.150.1"
-  resolved "https://registry.npmjs.org/@sanity/react-hooks/-/react-hooks-1.150.1.tgz#76932f2b0db1c1827504659235218084bd91b3d1"
+"@sanity/react-hooks@1.150.4":
+  version "1.150.4"
+  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.150.4.tgz#6322f258b3d203698ebd7e510e4b1f32baa270b0"
   dependencies:
-    "@sanity/base" "1.150.1"
+    "@sanity/base" "1.150.3"
     lodash "^4.17.15"
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
@@ -1565,6 +1595,18 @@
 "@sanity/schema@1.150.1":
   version "1.150.1"
   resolved "https://registry.npmjs.org/@sanity/schema/-/schema-1.150.1.tgz#f76ea32b8dfb41ceacb63b8e002b491aaba49fb8"
+  dependencies:
+    "@sanity/generate-help-url" "1.150.1"
+    arrify "^1.0.1"
+    humanize-list "^1.0.1"
+    json-reduce "^1.0.0"
+    leven "^2.1.0"
+    lodash "^4.17.15"
+    object-inspect "^1.6.0"
+
+"@sanity/schema@1.150.3":
+  version "1.150.3"
+  resolved "https://registry.yarnpkg.com/@sanity/schema/-/schema-1.150.3.tgz#98a0b6b0051da965d66823d99e2f61846b85a406"
   dependencies:
     "@sanity/generate-help-url" "1.150.1"
     arrify "^1.0.1"
@@ -1800,6 +1842,10 @@
 "@types/q@^1.5.1":
   version "1.5.4"
   resolved "https://registry.npmjs.org/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
+
+"@types/warning@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"
 
 "@typescript-eslint/experimental-utils@1.13.0":
   version "1.13.0"
@@ -6909,7 +6955,7 @@ popper.js@1.14.1:
   version "1.14.1"
   resolved "https://registry.npmjs.org/popper.js/-/popper.js-1.14.1.tgz#b8815e5cda6f62fc2042e47618649f75866e6753"
 
-popper.js@1.16.1, popper.js@^1.11.1, popper.js@^1.14.4, popper.js@^1.16.1:
+popper.js@1.16.1, popper.js@^1.11.1, popper.js@^1.14.4:
   version "1.16.1"
   resolved "https://registry.npmjs.org/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
 
@@ -9245,6 +9291,10 @@ tsconfig-paths@^3.9.0:
 tslib@^1.9.0:
   version "1.13.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
+
+tslib@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
 
 tty-browserify@0.0.0:
   version "0.0.0"
