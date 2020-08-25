@@ -892,9 +892,24 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
+"@reach/auto-id@^0.10.5":
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/@reach/auto-id/-/auto-id-0.10.5.tgz#fa78c71ce2f565ebed1ad91a8d9a685176d23c48"
+  dependencies:
+    "@reach/utils" "0.10.5"
+    tslib "^2.0.0"
+
 "@reach/auto-id@^0.7.2":
   version "0.7.4"
   resolved "https://registry.npmjs.org/@reach/auto-id/-/auto-id-0.7.4.tgz#c20bf6db87ef2f34b1bfb4bf450d675524a368c1"
+
+"@reach/utils@0.10.5":
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.10.5.tgz#fbac944d29565f6dd7abd0e1b13950e99b1e470b"
+  dependencies:
+    "@types/warning" "^3.0.0"
+    tslib "^2.0.0"
+    warning "^4.0.3"
 
 "@rexxars/eventsource-polyfill@^1.0.0":
   version "1.0.0"
@@ -936,7 +951,7 @@
     semver-compare "^1.0.0"
     shallow-equals "^1.0.0"
 
-"@sanity/base@1.150.2", "@sanity/base@^1.150.2":
+"@sanity/base@1.150.2":
   version "1.150.2"
   resolved "https://registry.npmjs.org/@sanity/base/-/base-1.150.2.tgz#b53c96d8727e05fb10ff9d599230b09cb6198976"
   dependencies:
@@ -950,6 +965,42 @@
     "@sanity/observable" "1.150.1"
     "@sanity/preview" "1.150.1"
     "@sanity/schema" "1.150.1"
+    "@sanity/state-router" "1.150.1"
+    "@sanity/structure" "1.150.1"
+    "@sanity/transaction-collator" "1.150.1"
+    "@sanity/util" "1.150.1"
+    "@sanity/uuid" "1.150.1"
+    "@sanity/validation" "1.150.1"
+    history "^4.6.3"
+    lodash "^4.17.15"
+    nano-pubsub "^1.0.2"
+    nanoid "^3.1.9"
+    observable-callback "^1.0.1"
+    oneline "^1.0.3"
+    promise-props "^1.0.0"
+    react-fast-compare "^2.0.2"
+    react-icon-base "^2.1.2"
+    react-icons "^2.2.7"
+    react-intl "^2.2.2"
+    react-props-stream "^1.0.0"
+    rxjs "^6.5.3"
+    semver-compare "^1.0.0"
+    shallow-equals "^1.0.0"
+
+"@sanity/base@1.150.3", "@sanity/base@^1.150.2":
+  version "1.150.3"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.150.3.tgz#fa368aa02e82fd33d886500b9cbbb067a18f0eac"
+  dependencies:
+    "@sanity/bifur-client" "^0.0.5"
+    "@sanity/client" "1.150.1"
+    "@sanity/components" "1.150.3"
+    "@sanity/generate-help-url" "1.150.1"
+    "@sanity/image-url" "^0.140.19"
+    "@sanity/initial-value-templates" "1.150.1"
+    "@sanity/mutator" "1.150.1"
+    "@sanity/observable" "1.150.1"
+    "@sanity/preview" "1.150.1"
+    "@sanity/schema" "1.150.3"
     "@sanity/state-router" "1.150.1"
     "@sanity/structure" "1.150.1"
     "@sanity/transaction-collator" "1.150.1"
@@ -1003,6 +1054,13 @@
   resolved "https://registry.npmjs.org/@sanity/bifur-client/-/bifur-client-0.0.4.tgz#3857eee4faa99464760490fd42a88db103b0117c"
   dependencies:
     nanoid "^3.1.3"
+
+"@sanity/bifur-client@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@sanity/bifur-client/-/bifur-client-0.0.5.tgz#05926145bd8c3f35f2d7f5beb28e26d915f6bfd9"
+  dependencies:
+    nanoid "^3.1.3"
+    rxjs "^6.4.0"
 
 "@sanity/block-tools@1.150.1", "@sanity/block-tools@^1.149.4":
   version "1.150.1"
@@ -1076,12 +1134,44 @@
     rxjs "^6.5.3"
     string-hash "^1.1.3"
 
-"@sanity/components@1.150.2", "@sanity/components@^1.150.2":
+"@sanity/components@1.150.2":
   version "1.150.2"
   resolved "https://registry.npmjs.org/@sanity/components/-/components-1.150.2.tgz#c869e03328cb199fb3beac9c78980f350db09bb6"
   dependencies:
     "@juggle/resize-observer" "3.1.3"
     "@sanity/base" "1.150.2"
+    "@sanity/util" "1.150.1"
+    attr-accept "^1.1.0"
+    boundless-arrow-key-navigation "^1.1.0"
+    chance "^1.0.4"
+    chroma-js "^2.0.4"
+    circular-at "^1.0.3"
+    classnames "^2.2.5"
+    date-fns "^1.29.0"
+    dom-scroll-into-view "^1.2.1"
+    element-resize-detector "^1.1.14"
+    exif-component "^1.0.1"
+    lodash "^4.17.15"
+    nano-pubsub "^1.0.2"
+    palx "^1.0.3"
+    popper.js "1.16.1"
+    react-animate-height "^2.0.6"
+    react-click-outside "^3.0.0"
+    react-motion "^0.5.2"
+    react-popper "1.3.7"
+    react-sortable-hoc "^0.6.3"
+    react-split-pane "^0.1.84"
+    react-tippy "1.4.0"
+    rxjs "^6.5.3"
+    string-hash "^1.1.3"
+
+"@sanity/components@1.150.3", "@sanity/components@^1.150.2":
+  version "1.150.3"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.150.3.tgz#0eb9c47f2ce85f046880a1837db699763916d558"
+  dependencies:
+    "@juggle/resize-observer" "3.1.3"
+    "@reach/auto-id" "^0.10.5"
+    "@sanity/base" "1.150.3"
     "@sanity/util" "1.150.1"
     attr-accept "^1.1.0"
     boundless-arrow-key-navigation "^1.1.0"
@@ -1230,12 +1320,12 @@
     "@sanity/generate-help-url" "0.140.0"
     "@sanity/rich-date-input" "0.140.34"
 
-"@sanity/default-layout@^1.150.2":
-  version "1.150.2"
-  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-1.150.2.tgz#e01d50efacfb900d1f101d2064f2a85c64dbe97f"
+"@sanity/default-layout@^1.150.3":
+  version "1.150.3"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.150.3.tgz#19cb8d15c0574578ecc9dae993bb683aa2006858"
   dependencies:
-    "@sanity/base" "1.150.2"
-    "@sanity/components" "1.150.2"
+    "@sanity/base" "1.150.3"
+    "@sanity/components" "1.150.3"
     "@sanity/generate-help-url" "1.150.1"
     classnames "^2.2.5"
     is-hotkey "^0.1.4"
@@ -1574,6 +1664,18 @@
     lodash "^4.17.15"
     object-inspect "^1.6.0"
 
+"@sanity/schema@1.150.3":
+  version "1.150.3"
+  resolved "https://registry.yarnpkg.com/@sanity/schema/-/schema-1.150.3.tgz#98a0b6b0051da965d66823d99e2f61846b85a406"
+  dependencies:
+    "@sanity/generate-help-url" "1.150.1"
+    arrify "^1.0.1"
+    humanize-list "^1.0.1"
+    json-reduce "^1.0.0"
+    leven "^2.1.0"
+    lodash "^4.17.15"
+    object-inspect "^1.6.0"
+
 "@sanity/schema@^0.147.6":
   version "0.147.6"
   resolved "https://registry.npmjs.org/@sanity/schema/-/schema-0.147.6.tgz#d85e6e1a33ed369de662660999aa11b59a3f5b6b"
@@ -1800,6 +1902,10 @@
 "@types/q@^1.5.1":
   version "1.5.4"
   resolved "https://registry.npmjs.org/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
+
+"@types/warning@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"
 
 "@typescript-eslint/experimental-utils@1.13.0":
   version "1.13.0"
@@ -9245,6 +9351,10 @@ tsconfig-paths@^3.9.0:
 tslib@^1.9.0:
   version "1.13.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
+
+tslib@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
 
 tty-browserify@0.0.0:
   version "0.0.0"
