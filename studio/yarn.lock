@@ -1207,9 +1207,9 @@
     postcss-value-parser "^3.3.0"
     source-list-map "^2.0.0"
 
-"@sanity/dashboard@^1.150.1":
-  version "1.150.1"
-  resolved "https://registry.npmjs.org/@sanity/dashboard/-/dashboard-1.150.1.tgz#71de05c581e43aa80b428caa1230d96eaa7dc13c"
+"@sanity/dashboard@^1.150.4":
+  version "1.150.4"
+  resolved "https://registry.yarnpkg.com/@sanity/dashboard/-/dashboard-1.150.4.tgz#7a552c51c8cde241043a20388888656d5d1af34d"
   dependencies:
     "@sanity/image-url" "^0.140.19"
     lodash "^4.17.15"
