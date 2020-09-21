@@ -30,8 +30,8 @@ module.exports = {
     {
       resolve: `gatsby-theme-shopify-manager`,
       options: {
-        shopName: "avalonstartv", // or custom domain
-        accessToken: "4b45da89c8ead28d7dfe3fb6885379dd",
+        shopName: `avalonstartv`, // or custom domain
+        accessToken: `4b45da89c8ead28d7dfe3fb6885379dd`,
         shouldConfigureSourcePlugin: false, // default
         shouldWrapRootElementWithProvider: false, // default
       },
