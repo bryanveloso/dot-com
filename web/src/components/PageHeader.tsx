@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { jsx, Box, Heading, Text } from 'theme-ui'
+import React from 'react'
+import { Box, Heading, Text } from '@chakra-ui/core'
 
 const PageHeader = ({ title, subtitle }) => (
   <Box sx={{ mb: 6 }}>

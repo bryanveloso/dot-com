@@ -1,6 +1,6 @@
-/** @jsx jsx */
+import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { jsx, Box, Container } from 'theme-ui'
+import { Box, Container } from '@chakra-ui/core'
 
 import { PageHeader, SEO } from '@/components'
 import { EntryList, LegacyList } from '@/components/partials'

@@ -1,6 +1,6 @@
-/** @jsx jsx */
+import React from 'react'
 import differenceInYears from 'date-fns/differenceInYears'
-import { jsx, Box, Grid, Link } from 'theme-ui'
+import { Box, Grid, Link } from '@chakra-ui/core'
 
 import { useAuthorData, useSiteSettings } from '@/hooks'
 
@@ -19,19 +19,32 @@ const Footer = () => {
   const { title } = useSiteSettings()
 
   return (
-    <footer sx={{ variant: 'components.footer' }}>
-      <Grid columns={[1, 'auto 1fr']} sx={{ my: 6, pt: 6, borderTop: '1px solid', borderColor: 'muted.bluegrey' }}>
+    <footer>
+      <Grid
+        templateColumns={[1, 'auto 1fr']}
+        sx={{
+          my: 6,
+          pt: 6,
+          borderTop: '1px solid',
+          borderColor: 'muted.bluegrey',
+        }}
+      >
         <Box>
           <img src={Avalonstar} alt="logo" sx={{ height: 48 }} />
         </Box>
-        <Grid gap={6} columns={[1, 2]}>
+        <Grid gap={6} templateColumns={[1, 2]}>
           <Box sx={{ color: 'muted.lightbluegrey', fontSize: 1 }}>
             <strong sx={{ color: 'white' }}>Avalonstar</strong> is the{' '}
             {differenceInYears(new Date(), new Date(2000, 9, 28))}
-            -year-old personal website of Bryan Veloso: <em>content creator</em>,{' '}
-            <em>retired professional user interface designer</em>, and <em>compass of purpose</em>.
+            -year-old personal website of Bryan Veloso: <em>content creator</em>
+            , <em>retired professional user interface designer</em>, and{' '}
+            <em>compass of purpose</em>.
           </Box>
-          <Grid gap={2} columns={[6, 2, 3]} sx={{ justifyContent: 'space-between' }}>
+          <Grid
+            gap={2}
+            templateColumns={[6, 2, 3]}
+            sx={{ justifyContent: 'space-between' }}
+          >
             <Link href={author.facebook}>
               <Facebook sx={{ height }} />
               <span>Facebook</span>
@@ -61,12 +74,17 @@ const Footer = () => {
       </Grid>
       <Grid
         gap={0}
-        columns={['auto', 'auto auto']}
-        sx={{ py: 4, color: 'muted.bluegrey', fontSize: 1, justifyContent: 'space-between' }}
+        templateColumns={['auto', 'auto auto']}
+        sx={{
+          py: 4,
+          color: 'muted.bluegrey',
+          fontSize: 'sm',
+          justifyContent: 'space-between',
+        }}
       >
         <Box>
-          © 2000–{new Date().getFullYear()} {title}. &ldquo;Avalonstar&rdquo; is a registered trademark of Avalonstar,
-          Inc. All rights reserved.
+          © 2000–{new Date().getFullYear()} {title}. &ldquo;Avalonstar&rdquo; is
+          a registered trademark of Avalonstar, Inc. All rights reserved.
         </Box>
         <Box>
           <em>Remember the ;</em>

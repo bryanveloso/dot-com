@@ -1,4 +1,4 @@
-export const colors = {
+export default {
   // ...
   text: '#efefef',
   background: '#05070d',
@@ -15,8 +15,8 @@ export const colors = {
     light: '#efefef',
   },
   muted: {
-    purple: '#928add',
     bluegrey: '#6d8591',
+    purple: '#928add',
     yellow: '#fff683',
     lightgreen: '#e7f7e7',
     midgrey: '#939393',

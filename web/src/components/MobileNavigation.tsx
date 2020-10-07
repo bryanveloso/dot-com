@@ -1,6 +1,6 @@
-/** @jsx jsx */
+import React from 'react'
 import { Link } from 'gatsby'
-import { jsx, Box, Flex } from 'theme-ui'
+import { Box, Flex } from '@chakra-ui/core'
 
 import { useNavigationData } from '@/hooks'
 import NavigationMenu from '@/images/navigation-menu.svg'
@@ -9,7 +9,7 @@ const MobileNavigation = () => {
   const data = useNavigationData()
   return (
     <Box sx={{ display: ['block', 'none'] }}>
-      <Flex as="nav" variant="header.nav" sx={{ alignItems: 'center', mt: 2 }}>
+      <Flex as="nav" sx={{ alignItems: 'center', mt: 2 }}>
         <Box mr={2} pr={2} sx={{ borderRight: '1px solid', borderColor: 'gradient.lighter' }}>
           <NavigationMenu
             sx={{

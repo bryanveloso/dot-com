@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { jsx, Container, Flex } from 'theme-ui'
+import React from 'react'
+import { Container, Flex } from '@chakra-ui/core'
 
 import { Footer, Header } from '@/components'
 

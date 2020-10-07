@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { jsx, Box, Card, Grid, Link, Text, Heading } from 'theme-ui'
+import React from 'react'
+import { Box, Card, Grid, Link, Text, Heading } from '@chakra-ui/core'
 
 import { PortableText } from '@/components'
 import { usePositionData } from '@/hooks'
@@ -21,8 +21,8 @@ const getLogo = (height = '60px') => ({
 })
 
 const ProjectList = ({ projects }) => (
-  <Box sx={{ fontSize: 0 }}>
-    <Text variant="text.smallCaps" sx={{ color: 'main.avayellow', fontSize: 1 }}>
+  <Box>
+    <Text variant="text.smallCaps" sx={{ color: 'main.avayellow' }}>
       Projects
     </Text>
     <Box>
@@ -47,7 +47,7 @@ const ProjectList = ({ projects }) => (
 const PositionList = () => {
   const data = usePositionData()
   return (
-    <Grid as="section" gap={4} columns={[1, null, 2]}>
+    <Grid as="section" gap={4} templateColumns={[1, null, 2]}>
       {data.map(({ node }) => {
         const { _rawSummary, id, company, date, projects, slug, title } = node
         return (
@@ -59,7 +59,7 @@ const PositionList = () => {
                 {company}&rsquo;s {title}
               </Heading>
             </Box>
-            <Grid columns={['1fr 7rem']}>
+            <Grid templateColumns={['1fr 7rem']}>
               {_rawSummary && <PortableText blocks={_rawSummary} />}
               {projects && <ProjectList projects={projects} />}
             </Grid>

@@ -1,7 +1,7 @@
-/** @jsx jsx */
+import React, { Fragment } from 'react'
 import Img from 'gatsby-image'
-import { Fragment } from 'react'
-import { jsx, AspectRatio, Text, Box } from 'theme-ui'
+
+import { AspectRatio, Text, Box } from '@chakra-ui/core'
 
 const Cover = ({ ratio, asset, alt, caption }) => (
   <Fragment>
@@ -21,7 +21,7 @@ const Cover = ({ ratio, asset, alt, caption }) => (
         )}
       </AspectRatio>
     </Box>
-    <Box sx={{ variant: 'structure.caption' }}>
+    <Box>
       <Text>{caption}</Text>
     </Box>
   </Fragment>

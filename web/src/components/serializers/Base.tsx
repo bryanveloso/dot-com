@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { jsx, Styled } from 'theme-ui'
+import React from 'react'
+import { Styled } from '@chakra-ui/core'
 
 import Figure from '@/components/Figure'
 import External from '@/images/external.svg'

@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
-/** @jsx jsx */
+import React from 'react'
 import useAxios from 'axios-hooks'
-import { jsx, Box, Flex, Link } from 'theme-ui'
+import { Box, Flex, Link } from '@chakra-ui/core'
 
 import External from '@/images/external.svg'
 import Twitch from '@/images/icon-twitch.svg'

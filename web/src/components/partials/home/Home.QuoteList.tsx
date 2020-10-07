@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { jsx, Box, Link, Text } from 'theme-ui'
+import React from 'react'
+import { Box, Link, Text } from '@chakra-ui/core'
 
 import { useQuoteData } from '@/hooks'
 
@@ -15,15 +15,15 @@ const QuoteList = () => {
               sx={{
                 color: 'muted.lightbluegrey',
                 fontFamily: 'freight',
-                fontSize: [2, null, 3],
-                lineHeight: [4, 3],
+                fontSize: ['md', null, 'lg'],
                 pb: 1,
               }}
             >
               &ldquo;{body}&rdquo;
             </Text>
-            <cite sx={{ display: 'block', fontSize: 1 }}>
-              &mdash;{name}, <Link href={`https://twitter.com/${handle}`}>{handle}</Link>
+            <cite sx={{ display: 'block', fontSize: 'sm' }}>
+              &mdash;{name},{' '}
+              <Link href={`https://twitter.com/${handle}`}>{handle}</Link>
             </cite>
           </Box>
         )

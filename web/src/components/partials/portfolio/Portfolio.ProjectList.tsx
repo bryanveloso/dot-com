@@ -1,7 +1,15 @@
-/** @jsx jsx */
+import React from 'react'
 import Img from 'gatsby-image'
-import { jsx, AspectRatio, Box, Flex, Grid, Link, Text, Heading } from 'theme-ui'
-import { useResponsiveValue } from '@theme-ui/match-media'
+import {
+  AspectRatio,
+  Box,
+  Flex,
+  Grid,
+  Link,
+  Text,
+  Heading,
+} from '@chakra-ui/core'
+import { useBreakpointValue } from '@chakra-ui/media-query'
 
 import { PortableText } from '@/components'
 import { useProjectData } from '@/hooks'
@@ -23,11 +31,21 @@ const getLogo = (height = '1.5rem') => ({
 
 const ProjectList = () => {
   const data = useProjectData()
-  const ratio = useResponsiveValue([36 / 9])
+  const ratio = useBreakpointValue([36 / 9])
   return (
     <Grid as="section" gap={4} sx={{ mb: 8 }} variant="pages.projects">
       {data.map(({ node }) => {
-        const { _rawInvolvement, _rawSummary, announcementUrl, date, name, id, image, position, projectUrl } = node
+        const {
+          _rawInvolvement,
+          _rawSummary,
+          announcementUrl,
+          date,
+          name,
+          id,
+          image,
+          position,
+          projectUrl,
+        } = node
         return (
           <Box sx={{ borderBottom: '1px solid', borderColor: 'highlight' }}>
             <Flex sx={{ alignItems: 'center', mb: 2 }}>
@@ -61,7 +79,7 @@ const ProjectList = () => {
                 </AspectRatio>
               </Box>
             )}
-            <Grid gap={4} columns={['7rem 1fr']} key={id}>
+            <Grid gap={4} templateColumns={['7rem 1fr']} key={id}>
               <Box>
                 <dl>
                   <dt>Company</dt>
@@ -84,7 +102,10 @@ const ProjectList = () => {
               <Box variant="layout.readable" sx={{ mb: 4 }}>
                 {_rawSummary && (
                   <Box>
-                    <Text variant="text.smallCaps" sx={{ color: 'main.avagreen', fontSize: 1 }}>
+                    <Text
+                      variant="text.smallCaps"
+                      sx={{ color: 'main.avagreen' }}
+                    >
                       Summary
                     </Text>
                     <PortableText blocks={_rawSummary} />
@@ -92,7 +113,10 @@ const ProjectList = () => {
                 )}
                 {_rawInvolvement && (
                   <Box>
-                    <Text variant="text.smallCaps" sx={{ color: 'main.avagreen', fontSize: 1 }}>
+                    <Text
+                      variant="text.smallCaps"
+                      sx={{ color: 'main.avagreen' }}
+                    >
                       My Involement
                     </Text>
                     <PortableText blocks={_rawInvolvement} />

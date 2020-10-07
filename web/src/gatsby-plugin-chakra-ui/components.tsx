@@ -1,6 +1,6 @@
-/** @jsx jsx */
+import React from 'react'
 /* eslint-disable react/jsx-pascal-case */
-import { jsx, Box, Flex, Styled } from 'theme-ui'
+import { Box, Flex, Styled } from '@chakra-ui/core'
 
 import OpenQuote from '@/images/open-quote.svg'
 

@@ -1,18 +1,18 @@
-/** @jsx jsx */
-import { useResponsiveValue } from '@theme-ui/match-media'
+import React from 'react'
+import { useBreakpointValue } from '@chakra-ui/media-query'
 import format from 'date-fns/format'
 import parseISO from 'date-fns/parseISO'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import numeral from 'numeral'
-import { jsx, AspectRatio, Box, Flex, Heading, Text } from 'theme-ui'
+import { AspectRatio, Box, Flex, Heading, Text } from '@chakra-ui/core'
 
 import { useEntryData } from '@/hooks'
 import { getBlogUrl } from '@/lib/helpers'
 
 const EntryList = () => {
   const data = useEntryData()
-  const ratio = useResponsiveValue([36 / 9, 52 / 9])
+  const ratio = useBreakpointValue([36 / 9, 52 / 9])
   return (
     <Box as="section">
       {data.map(({ node }, index: number) => {

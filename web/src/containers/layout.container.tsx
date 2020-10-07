@@ -1,12 +1,10 @@
-/** @jsx jsx */
+import React, { Fragment } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { jsx, Box, Flex } from 'theme-ui'
-import { Global } from '@emotion/core'
+import { Box, Flex } from '@chakra-ui/core'
 
 import { Footer, Header } from '@/components'
 
 import './layout.css'
-import { Fragment } from 'react'
 
 const duration = 0.3
 const variants = {
@@ -29,7 +27,6 @@ const variants = {
 
 const Layout = ({ children, location }) => (
   <Fragment>
-    <Global styles={() => ({ html: { backgroundColor: '#05070d' } })} />
     <Box
       sx={{
         borderTop: '0.25rem solid',
@@ -39,9 +36,18 @@ const Layout = ({ children, location }) => (
       }}
     >
       <Header />
-      <Flex sx={{ variant: 'layout.wrapper', minHeight: '100vh', flexDirection: 'column' }}>
+      <Flex
+        sx={{
+          maxWidth: [480, 720, 960, 1440],
+          mx: 'auto',
+          px: [4, null, 8, 9],
+          minHeight: '100vh',
+          flexDirection: 'column',
+        }}
+      >
         <AnimatePresence initial={false}>
-          <motion.main
+          <Box
+            as={motion.main}
             key={location.pathname}
             variants={variants}
             initial="initial"
@@ -50,7 +56,7 @@ const Layout = ({ children, location }) => (
             sx={{ flexGrow: 1 }}
           >
             {children}
-          </motion.main>
+          </Box>
         </AnimatePresence>
         <Footer />
       </Flex>

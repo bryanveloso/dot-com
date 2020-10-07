@@ -1,7 +1,7 @@
-/** @jsx jsx */
+import React from 'react'
 import { motion, AnimateSharedLayout } from 'framer-motion'
 import { Link } from 'gatsby'
-import { jsx, Box, Flex } from 'theme-ui'
+import { Box, Flex } from '@chakra-ui/core'
 
 import { useNavigationData } from '@/hooks'
 

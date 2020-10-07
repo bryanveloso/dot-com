@@ -1,8 +1,8 @@
-/** @jsx jsx */
+import React, { Fragment } from 'react'
 import Img from 'gatsby-image'
 import groupBy from 'lodash/groupBy'
-import { Fragment } from 'react'
-import { jsx, AspectRatio, Box, Flex, Grid, Heading, Text } from 'theme-ui'
+
+import { AspectRatio, Box, Flex, Grid, Heading, Text } from '@chakra-ui/core'
 
 import { PortableText } from '@/components'
 import { useEventData } from '@/hooks'
@@ -25,30 +25,49 @@ const getSubjectColor = () => ({
 const Event = ({ _rawBody, coverImage, date, name, subject }) => {
   return (
     <Fragment>
-      <Flex sx={{ color: getSubjectColor()[subject], gridColumn: '1', fontSize: 0 }}>
+      <Flex sx={{ color: getSubjectColor()[subject], gridColumn: '1' }}>
         {getEventIcon()[subject]}
         <Text variant="smallCaps" sx={{ display: ['none', 'block'], pl: 2 }}>
           The {subject}
         </Text>
       </Flex>
-      <Grid gap={2} color="white" columns={['auto']} sx={{ fontSize: 1, gridColumn: '2', pl: 4, mb: 6 }}>
+      <Grid
+        gap={2}
+        color="white"
+        templateColumns={['auto']}
+        sx={{ gridColumn: '2', pl: 4, mb: 6 }}
+      >
         {coverImage && (
           <Box sx={{ boxShadow: 'card.xl', mb: 2 }}>
             <AspectRatio ratio={16 / 9}>
               <Img
                 fluid={coverImage.asset.fluid}
                 alt={coverImage.alt}
-                sx={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 2 }}
+                sx={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  borderRadius: 2,
+                }}
               />
             </AspectRatio>
           </Box>
         )}
         <Box>
-          <Text sx={{ fontFamily: 'freight', fontSize: 4, lineHeight: 4, fontWeight: 'bold' }}>{name}.</Text>
-          <Text variant="date" sx={{ fontSize: 2, mb: 2 }}>
+          <Text
+            sx={{
+              fontFamily: 'freight',
+              fontWeight: 'bold',
+            }}
+          >
+            {name}.
+          </Text>
+          <Text variant="date" sx={{ mb: 2 }}>
             {date}
           </Text>
-          <Box variant="layout.readable">{_rawBody && <PortableText blocks={_rawBody} />}</Box>
+          <Box variant="layout.readable">
+            {_rawBody && <PortableText blocks={_rawBody} />}
+          </Box>
         </Box>
       </Grid>
     </Fragment>
@@ -58,7 +77,9 @@ const Event = ({ _rawBody, coverImage, date, name, subject }) => {
 const Section = ({ data, year }) => {
   return (
     <Fragment>
-      <Heading sx={{ color: 'main.avablue', gridColumn: 1, pb: 2 }}>{year}</Heading>
+      <Heading sx={{ color: 'main.avablue', gridColumn: 1, pb: 2 }}>
+        {year}
+      </Heading>
       {data.map((node) => (
         <Event key={node.id} {...node} />
       ))}
@@ -71,7 +92,12 @@ const EventList = () => {
   const dataByYear = groupBy(data, ({ date }) => date.substr(date.length - 4))
 
   return (
-    <Grid gap={0} columns={['2rem auto', '7rem auto']} as="section" sx={{ position: 'relative' }}>
+    <Grid
+      gap={0}
+      templateColumns={['2rem auto', '7rem auto']}
+      as="section"
+      sx={{ position: 'relative' }}
+    >
       {Object.keys(dataByYear).map((key) => (
         <Section key={key} year={key} data={dataByYear[key]} />
       ))}
