@@ -115,6 +115,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-theme-shopify-manager`,
+      options: {
+        shopName: 'avalonstartv',
+        accessToken: '4b45da89c8ead28d7dfe3fb6885379dd',
+      },
+    },
+    {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve(`./src/containers/layout.container.tsx`),
