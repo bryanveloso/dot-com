@@ -37,6 +37,8 @@
     "gatsby-plugin-typescript": "^2.4.19",
     "gatsby-source-filesystem": "^2.3.28",
     "gatsby-source-sanity": "^6.0.4",
+    "gatsby-source-shopify": "^3.2.35",
+    "gatsby-theme-shopify-manager": "^0.1.8",
     "gatsby-theme-style-guide": "^0.3.1",
     "gatsby-transform-portable-text": "^0.0.2",
     "gatsby-transformer-sharp": "^2.5.14",

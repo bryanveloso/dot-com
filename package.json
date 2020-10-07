@@ -19,9 +19,5 @@
   "devDependencies": {
     "@sanity/cli": "^1.150.1",
     "lerna": "^3.20.2"
-  },
-  "dependencies": {
-    "gatsby-source-shopify": "^3.2.35",
-    "gatsby-theme-shopify-manager": "^0.1.8"
   }
 }
