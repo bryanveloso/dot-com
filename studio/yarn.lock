@@ -1469,9 +1469,9 @@
     es6-error "^4.0.2"
     type-of-is "^3.5.1"
 
-"@sanity/vision@^1.150.6":
-  version "1.150.6"
-  resolved "https://registry.npmjs.org/@sanity/vision/-/vision-1.150.6.tgz#be46650b935aed9b24b4ec85cb4d5cd83675e5e3"
+"@sanity/vision@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-2.0.1.tgz#063a75728568349dfe71036a10f55e5f95af5f31"
   dependencies:
     classnames "^2.2.5"
     codemirror "^5.47.0"
