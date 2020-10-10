@@ -1121,11 +1121,11 @@
     react-tippy "1.4.0"
     rxjs "^6.5.3"
 
-"@sanity/default-login@^1.150.1":
-  version "1.150.1"
-  resolved "https://registry.npmjs.org/@sanity/default-login/-/default-login-1.150.1.tgz#53b38607f68b33f75696c80a9b65858640b0295f"
+"@sanity/default-login@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-2.0.1.tgz#396f06345850bc1f2e188c9ba0e2ca493eee3781"
   dependencies:
-    "@sanity/generate-help-url" "1.150.1"
+    "@sanity/generate-help-url" "2.0.1"
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
@@ -1227,6 +1227,10 @@
 "@sanity/generate-help-url@1.150.1":
   version "1.150.1"
   resolved "https://registry.npmjs.org/@sanity/generate-help-url/-/generate-help-url-1.150.1.tgz#bc0bda74cd0980e2194d275369e0ebc7970a0a81"
+
+"@sanity/generate-help-url@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-2.0.1.tgz#2ba4c8087bd1447737358a6b18ad6ea503252532"
 
 "@sanity/google-maps-input@^1.150.1":
   version "1.150.1"
