@@ -12,7 +12,7 @@
     "@theme-ui/color": "^0.3.4",
     "@theme-ui/match-media": "^0.3.4",
     "@types/react-helmet": "^6.1.0",
-    "axios": "^0.20.0",
+    "axios": "^0.21.0",
     "axios-hooks": "^2.2.0",
     "date-fns": "^2.16.1",
     "dotenv": "^8.2.0",
