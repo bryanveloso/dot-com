@@ -8,10 +8,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "sanity start",
-    "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
     "build": "sanity build",
     "graphql-deploy": "sanity graphql deploy --playground --force",
-    "lint": "eslint .",
     "test": "sanity check"
   },
   "keywords": [
@@ -30,9 +28,9 @@
     "date-fns": "^2.12.0",
     "get-youtube-id": "^1.0.1",
     "prop-types": "^15.6",
-    "react": "^16.14",
-    "react-dom": "^16.14",
-    "react-icons": "^3.10.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
     "react-youtube": "^7.13.0",
     "sanity-plugin-dark-theme-blue": "^1.0.1",
     "sanity-plugin-dashboard-widget-document-list": "^0.0.11",
@@ -40,15 +38,8 @@
     "sanity-plugin-markdown": "^1.0.1"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.22.0",
-    "prettier": "2.1.1",
-    "prettier-eslint-cli": "^5.0.0"
+    "eslint-config-xo-react": "^0.23.0",
+    "prettier": "2.2.1",
+    "xo": "^0.37.1"
   }
 }

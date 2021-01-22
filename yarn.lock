@@ -824,10 +824,6 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@sanity/cli@^1.150.1":
-  version "1.150.1"
-  resolved "https://registry.npmjs.org/@sanity/cli/-/cli-1.150.1.tgz#397c43fa3cf61ead7c006e74b687d9f323e5afce"
-
 "@types/glob@^7.1.1":
   version "7.1.3"
   resolved "https://registry.npmjs.org/@types/glob/-/glob-7.1.3.tgz#e6ba80f36b7daad2c685acd9266382e68985c183"
