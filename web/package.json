@@ -16,7 +16,7 @@
     "axios-hooks": "^2.4.1",
     "date-fns": "^2.19.0",
     "dotenv": "^8.2.0",
-    "framer-motion": "^2.9.4",
+    "framer-motion": "^3.10.3",
     "gatsby": "^2.32.10",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-emotion": "^4.5.0",
