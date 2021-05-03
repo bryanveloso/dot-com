@@ -1842,10 +1842,10 @@
     "@types/react" "^17.0.0"
     rxjs "^6.5.3"
 
-"@sanity/ui@^0.33.12", "@sanity/ui@^0.33.18":
-  version "0.33.18"
-  resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-0.33.18.tgz#90843351a105dd60c84246b661127b40ffe7216d"
-  integrity sha512-7t3GN+4mPoEf2J97Ic//dX4Tnu9y2MpHDYvVxQt1blT8iBjBFHVmAca4sKj/P0UnttNJ8rFv+LkXcvsFd2qydQ==
+"@sanity/ui@^0.33.12", "@sanity/ui@^0.33.18", "@sanity/ui@^0.33.19":
+  version "0.33.19"
+  resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-0.33.19.tgz#c119838fe215f1f302cdac81912cdc47094624fb"
+  integrity sha512-9zDkEBY/tPwvypX3G0dhFg3AyjrG6CD0lUq/NywmkjsXZ/sKlIl/TpsQvf9miubGlUunc7lmmhDxLO75SpK9Yg==
   dependencies:
     "@juggle/resize-observer" "^3.3.0"
     "@popperjs/core" "^2.9.2"
@@ -1932,13 +1932,13 @@
     es6-error "^4.0.2"
     type-of-is "^3.5.1"
 
-"@sanity/vision@^2.8.0":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-2.8.0.tgz#7b412e75dd52a438363779346982d8d1c173bb8b"
-  integrity sha512-h45RU8PBxmE7Y2zzFQurRGfwiNKC05nwGUc/JxXTxEDSQwmEq8ailqmSbTRqRNyauCV9dQ3hLG/imQohRlIOug==
+"@sanity/vision@^2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-2.10.0.tgz#f2b44177d2f3cefcc5d79fcfad16e2042fe8d54f"
+  integrity sha512-hs4NFRD8w8mWCwDDUQVaCnF4QU0+Dw0Avz7sleD5gJwSHmhvB9xvVHZW1tb1vmoon3MruqRKvtOW1Qcp2A6VdQ==
   dependencies:
     "@sanity/icons" "^1.0.5"
-    "@sanity/ui" "^0.33.12"
+    "@sanity/ui" "^0.33.19"
     classnames "^2.2.5"
     codemirror "^5.47.0"
     moment "^2.19.1"
