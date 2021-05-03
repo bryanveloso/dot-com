@@ -8844,11 +8844,14 @@ sanity-plugin-dark-theme-blue@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/sanity-plugin-dark-theme-blue/-/sanity-plugin-dark-theme-blue-1.0.1.tgz#74804676323b49d05df383ec5c6d72458d3e8679"
 
-sanity-plugin-dashboard-widget-document-list@^0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/sanity-plugin-dashboard-widget-document-list/-/sanity-plugin-dashboard-widget-document-list-0.0.11.tgz#1533a7d35f95f1265cb4777dac770dfd53a426cb"
+sanity-plugin-dashboard-widget-document-list@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/sanity-plugin-dashboard-widget-document-list/-/sanity-plugin-dashboard-widget-document-list-0.0.13.tgz#a2839d82d3ce3ee3d08735877cc13f3ad890de7a"
+  integrity sha512-nePwppkIZ7deU05O+tHqh+tdJ5uCD9bVn/Q/XB1s6z0e93JMGJ5eZAggqPTmCH9GRETUAFthhS5GE4idTQwAfA==
   dependencies:
     lodash "^4.17.15"
+    prop-types "^15.7.2"
+    rxjs "^6.0.0"
 
 sanity-plugin-dashboard-widget-netlify@^1.1.0:
   version "1.1.0"
