@@ -5,7 +5,7 @@ import { SanityProps } from 'next-sanity-extra'
 import { sanityStaticProps, useSanityQuery } from '../lib/sanity'
 
 const QUERY = groq`
-  *[_type == "page" && title == "Blog"]
+  *[_type == "page" && title == "Blog"][0]
 `
 
 const Blog: NextPage<SanityProps> = props => {
@@ -20,5 +20,6 @@ const Blog: NextPage<SanityProps> = props => {
 export default Blog
 
 export const getStaticProps: GetStaticProps = async context => ({
-  props: await sanityStaticProps({ context, query: QUERY })
+  props: await sanityStaticProps({ context, query: QUERY }),
+  revalidate: 3600
 })
