@@ -11,7 +11,6 @@ class Document extends NextDocument {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <style
             id="stitches"
-            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
         </Head>
