@@ -5,10 +5,10 @@ import { SanityProps } from 'next-sanity-extra'
 import { sanityStaticProps, useSanityQuery } from '../lib/sanity'
 
 const QUERY = groq`
-  *[_type == "page" && title == "Home"]
+  *[_type == "page" && title == "Portfolio"]
 `
 
-const Home: NextPage<SanityProps> = props => {
+const Portfolio: NextPage<SanityProps> = props => {
   const { data, loading, error } = useSanityQuery(QUERY, props)
   return (
     <section>
@@ -17,7 +17,7 @@ const Home: NextPage<SanityProps> = props => {
   )
 }
 
-export default Home
+export default Portfolio
 
 export const getStaticProps: GetStaticProps = async context => ({
   props: await sanityStaticProps({ context, query: QUERY })
