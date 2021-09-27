@@ -4,9 +4,9 @@ import { SanityProps } from 'next-sanity-extra'
 
 import { sanityStaticProps, useSanityQuery } from '../lib/sanity'
 
-const QUERY = groq`
-  *[_type == "page" && title == "Kit"][0]
-`
+const QUERY = groq`{
+  "page": *[_type == "page" && title == "Kit"][0]
+}`
 
 const Kit: NextPage<SanityProps> = props => {
   const { data, loading, error } = useSanityQuery(QUERY, props)

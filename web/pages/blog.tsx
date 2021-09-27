@@ -4,9 +4,11 @@ import { SanityProps } from 'next-sanity-extra'
 
 import { sanityStaticProps, useSanityQuery } from '../lib/sanity'
 
-const QUERY = groq`
-  *[_type == "page" && title == "Blog"][0]
-`
+// @TODO: Add list of MDX entries to props.
+const QUERY = groq`{
+  "page": *[_type == "page" && title == "Blog"][0],
+  "entries": *[_type == "entry"] | order(publishedAt desc)
+}`
 
 const Blog: NextPage<SanityProps> = props => {
   const { data, loading, error } = useSanityQuery(QUERY, props)
