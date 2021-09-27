@@ -1,3 +1,3 @@
 import { Box } from '@/styles/box'
 
-const Header = () => <Box>hi</Box>
+export const Header = () => <Box>hi</Box>
