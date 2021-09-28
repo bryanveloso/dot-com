@@ -6,6 +6,10 @@
   "author": "Bryan Veloso <bryan@avalonstar.com>",
   "license": "MIT",
   "private": true,
+  "workspaces": [
+    "studio",
+    "web"
+  ],
   "scripts": {
     "build": "lerna run build --parallel",
     "dev": "lerna run dev --parallel",
