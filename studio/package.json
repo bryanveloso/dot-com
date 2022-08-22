@@ -27,7 +27,7 @@
     "@sanity/desk-tool": "^2.20.0",
     "@sanity/google-maps-input": "^2.20.0",
     "@sanity/vision": "^2.20.0",
-    "date-fns": "^2.19.0",
+    "date-fns": "^2.29.2",
     "get-youtube-id": "^1.0.1",
     "prop-types": "^15.6",
     "react": "^16.14",
