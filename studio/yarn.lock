@@ -1165,10 +1165,10 @@
     get-random-values "^1.2.2"
     lodash "^4.17.15"
 
-"@sanity/cli@^2.20.0":
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-2.20.0.tgz#a894981f36fe79c02e62d13f67285e539d24a541"
-  integrity sha512-C60S5mTZKHKwTve38jrdIHN2gw8Eq0x8CW/R9lqTnc/QDYMaPV3hzqKI8+OA87RBVrfQDcxCQp3RXkEErXUxRA==
+"@sanity/cli@^2.34.2":
+  version "2.34.2"
+  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-2.34.2.tgz#f6c8bbed6ad3f23b73eaa34a562eee6ed55aa080"
+  integrity sha512-Q04eefXAbP4pTzPFuvH7Ab/75QYF/9kQ2mTgJrJFbADY9aJBFLoPzcsGkHfQ41C9n3SjbQq2T2hOH3Z36JkCaw==
 
 "@sanity/client@2.19.0":
   version "2.19.0"
